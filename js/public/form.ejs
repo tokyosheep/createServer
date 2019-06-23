@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <h1><%= title %></h1>
+   <p><%=content %></p>
+   <p><%= n %>views</p>
+    <form method="POST">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="text" name="name">
+        <input type="submit" value="post!">
+    </form>
+    <ul>
+        <% for(let i = 0;i<posts.length;i++){ %>
+            <li><%= posts[i] %></li>
+        <% } %>
+    </ul>    
+</body>
+</html>
